@@ -1,0 +1,239 @@
+/* Add this CSS to your existing style.css or in your HTML file's style section */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: "Almarai", sans-serif;
+    direction: rtl;
+}
+
+.main {
+    padding: 1% 0%;
+    width: 80%;
+    margin: auto;
+    margin-top: 55px;
+}
+
+.top-image {
+    text-align: center;
+}
+
+#hamas-logo {
+    width: 25%;
+}
+
+.text-box {
+    width: 100%;
+    padding: 2% 0%;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.text-box p {
+    padding: 2% 0%;
+}
+
+.p-black {
+    color: #333;
+}
+
+.p-orange { /* Changed color to orange */
+    color: #ff7043;
+}
+.p-blue {
+    color: #1c4587;
+}
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.video {
+    text-align: center;
+}
+
+video {
+    width: 100%;
+}
+
+.stand-alone-images {
+    padding: 2% 0%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.st-img-con {
+    padding: 1% 0%;
+}
+
+.st-img-con img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.links-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.link {
+    display: inline;
+}
+/* Add this CSS to your existing style.css or in your HTML file's style section */
+
+.link button {
+    font-size: 2rem;
+    margin: 1%;
+    background: linear-gradient(45deg, #02c848, #333c56); /* Change this gradient to your desired color */
+    color: #fff;
+    cursor: pointer;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 10px;
+}
+
+.donate-button {
+    background: #ff7043; /* Keep this color as orange for the donate button */
+    color: #fff;
+}
+
+.contact {
+    padding: 2% 0;
+}
+
+.contact-icon {
+    display: inline;
+}
+
+.contact-icon img {
+    width: 5%;
+    cursor: pointer;
+}
+
+.donate-button {
+    background: #ff7043; /* Changed color to orange */
+    color: #fff;
+}
+
+@media only screen and (max-width: 1160px) {
+    .main {
+        padding: 2% 0%;
+    }
+
+    .text-box {
+        width: 80%;
+        padding: 2% 0%;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+
+    #hamas-logo {
+        width: 50%;
+    }
+
+    .videos {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        padding: 2% 0%;
+    }
+
+    .text-box {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    #hamas-logo {
+        width: 50%;
+    }
+
+    .videos {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .st-img-con {
+        padding: 3% 0%;
+    }
+
+    .stand-alone-images {
+        width: 90%;
+    }
+
+    figcaption {
+        width: 90%;
+    }
+
+    .link {
+        display: block;
+    }
+
+    .contact-icon img {
+        width: 15%;
+    }
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ff7043; /* Changed color to orange */
+    overflow: hidden;
+    z-index: 100;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.top-nav li {
+    float: right;
+    margin: 10px;
+}
+
+.top-nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.top-nav a:hover {
+    background-color: #1c4587; /* Changed hover color to blue */
+}
+
+@media screen and (max-width: 768px) {
+    .top-nav li {
+        float: none;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .top-nav {
+        position: relative;
+    }
+}
